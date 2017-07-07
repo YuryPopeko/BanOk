@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>BanOk</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<a href="#" class="logo">
+				<img src="images/logo.png">
+			</a>
+			<label for="menu">
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+					<path d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z" />
+				</svg>
+			</label>
+			<div class="application">
+				<span>Одобрено заявок:</span>
+				<span class="application-count">5456789</span>
+			</div>
+			<div class="kurs">
+				<span>Курсы ЦБ на 01.06.2016: </span>
+				<ul>
+					<li class="down">
+						Доллар США:
+						<b>66</b>
+					</li>
+					<li class="up">
+						Euro:
+						<b>73.84</b>
+					</li>
+				</ul>
+			</div>
+			<div class="city">
+				<a href="#" class="list-title">
+					Москва
+					<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 292.362 292.362">
+						<path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
+						C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
+						s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/>
+					</svg>
+				</a>
+			       <ul class="city-list">
+			         <li><a href="#">Минск</a></li>
+			         <li><a href="#">Киев</a></li>
+			         <li><a href="#">Варшава</a></li>
+			         <li><a href="#">Берлин</a></li>
+			         <li><a href="#">Вильнюс</a></li>
+			         <li><a href="#">Рига</a></li>
+			       </ul>
+			</div>
+		</div>
+		<input type="checkbox" id="menu">
+		<div class="header-bottom clearfix">
+			<nav>
+				<ul>
+					<li><a href="#">Кредит</a></li>
+					<li><a href="#">Кредиты в банках</a></li>
+					<li><a href="#">Кредиты в городах</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Статьи и новости</a></li>
+					<li><a href="#">Контакты</a></li>
+					<br>
+					<li class="user-icon">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+								<path d="M31.11 28.336c-0.201-0.133-3.848-2.525-9.273-3.699 1.99-2.521 3.268-5.912 3.811-8.169 0.754-3.128 0.461-9.248-2.543-13.062-1.756-2.229-4.213-3.406-7.105-3.406s-5.349 1.178-7.104 3.406c-3.004 3.813-3.296 9.933-2.543 13.061 0.543 2.257 1.82 5.648 3.811 8.169-5.425 1.174-9.072 3.566-9.272 3.699-0.733 0.488-1.061 1.4-0.805 2.242 0.254 0.845 1.033 1.423 1.913 1.423h28c0.881 0 1.658-0.578 1.914-1.422 0.257-0.842-0.071-1.754-0.804-2.242zM20.267 23.398l-0.326 0.414c-2.385 2.74-5.495 2.74-7.879 0l-0.327-0.414c-2.785-3.529-4.167-8.197-3.572-12.65 0.545-4.279 2.997-8.748 7.837-8.748s7.293 4.47 7.838 8.749c0.593 4.455-0.784 9.118-3.571 12.649zM2 30c0.138-0.092 3.526-2.314 8.586-3.408l2.484-0.537c0.887 0.582 1.86 0.945 2.93 0.945 1.071 0 2.043-0.363 2.93-0.945l2.484 0.537c5.020 1.086 8.396 3.283 8.586 3.408h-28z"/>
+							</svg>
+						</a>
+					</li>
+					<li class="search">
+						<form>
+							<input type="search" name="banoksearch">
+							<input type="submit" name="search" value=" ">
+						</form>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="blue-poster">
+			<img src="images/sadman.png">
+			<div class="text">
+				<p class="first">Надоело бегать по банкам<br>в поисках подходящего кредита?</p>
+				<p class="second">Устали изучать банковские сайты, считать, сравнивать?</p>
+				<p class="third">Есть решение!</p>
+			</div>
+		</div>
+		<div class="white-poster">
+			<a href="#banok" class="btn-down">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+					<path d="M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z"></path>
+				</svg>
+			</a>
+			<div class="wrapper">
+				<a name="banok"></a>
+					<div class="check-list">
+					<h1>БанОК</h1>
+					<p>бесплатный сервис подбора кредитных программ</p>
+					<ul>
+						<li>9 лет работы</li>
+						<li>Гарантия защиты данных</li>
+						<li>Подбор самых выгодных кредитов</li>
+						<li>Все наши услуги абсолютно бесплатны!</li>
+					</ul>
+					<button class="quest">Заполнить анкету</button>
+				</div>
+				<div class="aboutplay">
+					<a href="#open" class="modal">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M9.984 16.5l6-4.5-6-4.5v9zM12 2.016c5.531 0 9.984 4.453 9.984 9.984s-4.453 9.984-9.984 9.984-9.984-4.453-9.984-9.984 4.453-9.984 9.984-9.984z"></path>
+						</svg>
+					</a>
+					<div id="open" class="window">
+					    <div class="window-wrapper">
+					        <a href="#close" title="Закрыть" class="close">×</a>
+					        <div>
+					        	<img class="video" src="http://img.youtube.com/vi/Hid-LDmzK3o/0.jpg" data-video="https://www.youtube.com/embed/Hid-LDmzK3o?autohide=1&showinfo=0&autoplay=1">
+					        </div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<input type="radio" name="history" id="good-history">
+		<input type="radio" name="history" id="bad-history">
+		<input type="radio" name="history" id="tech-history" checked>
+		<div class="details">
+			<div class="wrapper">
+				<p class="our-work">Наша работа в деталях</p>
+				<img src="images/aboutimg.png">
+				<p class="fill">Заполняете анкету на кредит</p>
+				<button class="quest">Заполнить анкету</button>
+				<div class="way-vertical start"></div>
+				<div class="processing">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32">
+						<path d="M23.883 6.086l-2.82 2.832c1.89 1.891 2.937 4.406 2.937 7.082 0 5.516-4.484 10-10 10v-2l-4 4 4 4v-2c7.719 0 14-6.281 14-14 0-3.746-1.461-7.266-4.117-9.914zM18 4l-4-4v2c-7.719 0-14 6.281-14 14 0 3.746 1.461 7.266 4.117 9.914l2.82-2.832c-1.89-1.891-2.937-4.406-2.937-7.082 0-5.516 4.484-10 10-10v2l4-4z"></path>
+					</svg>
+				</div>
+				<div class="way-horizontal left first"></div>
+				<div class="way-horizontal right second"></div>
+				<div class="quarter-circle-bottom-right">
+					<div class="hide-round"></div>
+				</div>
+				<div class="quarter-circle-bottom-left">
+					<div class="hide-round"></div>
+				</div>
+				<div class="way-vertical first"></div>
+				<div class="way-vertical second"></div>
+				<p class="processing-message">Обработка<br>параметров анкеты</p>
+				<div class="way-vertical mobile"></div>
+			</div>
+		</div>
+		<div class="credit-history">
+			<div class="wrapper">
+				<div class="good-block">
+					<label for="good-history" class="good-button"></label>
+					<p>Хорошая КИ</p>
+				</div>
+				<div class="or-block">
+					<p>или</p>
+				</div>
+				<div class="bad-block">
+					<label for="bad-history" class="bad-button"></label>
+					<p>Плохая КИ</p>
+				</div>
+				<div class="dark"></div>
+			</div>
+		</div>
+		<div class="good-history">
+			<div class="wrapper">
+				<div class="way-vertical start"></div>
+				<img src="images/check.png" class="check-img">
+				<svg class="check-check-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M9.984 17.016l9-9-1.406-1.453-7.594 7.594-3.563-3.563-1.406 1.406zM12 2.016c5.531 0 9.984 4.453 9.984 9.984s-4.453 9.984-9.984 9.984-9.984-4.453-9.984-9.984 4.453-9.984 9.984-9.984z"/>
+				</svg>
+				<p class="check">Проверка на совпадения условия<br>банка с данными<br>обработанной анкеты</p>
+				<div class="way-horizontal right first"></div>
+				<div class="quarter-circle-bottom-left first">
+					<div class="hide-round"></div>
+				</div>
+				<div class="way-vertical first"></div>
+				<img src="images/min.png" class="min-img">
+				<svg class="check-min-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M9.984 17.016l9-9-1.406-1.453-7.594 7.594-3.563-3.563-1.406 1.406zM12 2.016c5.531 0 9.984 4.453 9.984 9.984s-4.453 9.984-9.984 9.984-9.984-4.453-9.984-9.984 4.453-9.984 9.984-9.984z"/>
+				</svg>
+				<p class="min">Выбор минимальной<br>процентной ставки</p>
+				<div class="way-horizontal left second"></div>
+				<div class="quarter-circle-bottom-right first">
+					<div class="hide-round"></div>
+				</div>
+				<div class="way-vertical second"></div>
+				<img src="images/bank.png" class="bank-img">
+				<svg class="check-bank-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M9.984 17.016l9-9-1.406-1.453-7.594 7.594-3.563-3.563-1.406 1.406zM12 2.016c5.531 0 9.984 4.453 9.984 9.984s-4.453 9.984-9.984 9.984-9.984-4.453-9.984-9.984 4.453-9.984 9.984-9.984z"/>
+				</svg>
+				<p class="bank">Отбор банков, выдающих<br>кредит на данный момент</p>
+				<div class="way-horizontal right third"></div>
+				<div class="quarter-circle-bottom-left second">
+					<div class="hide-round"></div>
+				</div>
+				<div class="way-vertical third"></div>
+				<img src="images/search-bank.png" class="search-bank-img">
+				<svg class="check-search-bank-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M9.984 17.016l9-9-1.406-1.453-7.594 7.594-3.563-3.563-1.406 1.406zM12 2.016c5.531 0 9.984 4.453 9.984 9.984s-4.453 9.984-9.984 9.984-9.984-4.453-9.984-9.984 4.453-9.984 9.984-9.984z"/>
+				</svg>
+				<p class="search-bank">Отправка анкеты<br>в подходящие банки<br>или в МФО</p>
+				<div class="way-horizontal left fourth"></div>
+				<div class="quarter-circle-bottom-right third">
+					<div class="hide-round"></div>
+				</div>
+				<div class="way-vertical fourth"></div>
+			</div>
+			<div class="ready">
+				<div class="wrapper">
+					<img src="images/ready.png" class="ready-img">
+					<p>Заполнить онлайн заявку прямо сейчас!</p>
+					<button class="quest">Заполнить анкету</button>
+				</div>
+			</div>
+		</div>
+		<input type="radio" name="check" id="yes">
+		<input type="radio" name="check" id="no">
+		<input type="radio" name="check" id="tech-check" checked>
+		<div class="bad-history">
+			<div class="wrapper">
+				<div class="way-vertical first"></div>
+				<div class="quarter-circle-top-left">
+					<div class="hide-round"></div>
+				</div>
+				<div class="way-horizontal left"></div>
+				<img src="images/search-bank.png" class="bad-check-img">
+				<svg class="check-bad-check-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M9.984 17.016l9-9-1.406-1.453-7.594 7.594-3.563-3.563-1.406 1.406zM12 2.016c5.531 0 9.984 4.453 9.984 9.984s-4.453 9.984-9.984 9.984-9.984-4.453-9.984-9.984 4.453-9.984 9.984-9.984z"/>
+				</svg>
+				<p class="check">Проверка наличия банка,<br>выдающих кредит такому типу<br>анкеты</p>
+			</div>
+			<div class="yes-no">
+				<label for="yes">Есть</label>
+				<label for="no">Нет</label>
+			</div>
+		</div>
+		<div class="yes">
+			<div class="wrapper">
+				<div class="way-vertical first"></div>
+				<img src="images/search-bank.png" class="search-bank-img">
+				<svg class="check-search-bank-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M9.984 17.016l9-9-1.406-1.453-7.594 7.594-3.563-3.563-1.406 1.406zM12 2.016c5.531 0 9.984 4.453 9.984 9.984s-4.453 9.984-9.984 9.984-9.984-4.453-9.984-9.984 4.453-9.984 9.984-9.984z"/>
+				</svg>
+				<p class="search-bank">Отправка анкеты<br>в подходящие банки<br>или в МФО</p>
+				<div class="way-vertical second"></div>
+			</div>
+			<div class="ready">
+				<div class="wrapper">
+					<img src="images/ready.png" class="ready-img">
+					<p>Заполнить онлайн заявку прямо сейчас!</p>
+					<button class="quest">Заполнить анкету</button>
+				</div>
+			</div>
+		</div>
+		<div class="no">
+			<div class="wrapper">
+				<div class="way-vertical first"></div>
+				<img src="images/case.png" class="case-img">
+				<svg class="check-case-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M9.984 17.016l9-9-1.406-1.453-7.594 7.594-3.563-3.563-1.406 1.406zM12 2.016c5.531 0 9.984 4.453 9.984 9.984s-4.453 9.984-9.984 9.984-9.984-4.453-9.984-9.984 4.453-9.984 9.984-9.984z"/>
+				</svg>
+				<div class="list">
+					<p class="sending">Отправка анкеты в отдел "Кредитный брокер"</p>
+					<ul>
+						<li>Полный финансовый анализ</li>
+						<li>Выявление всех слабых мест в<br>             кредитной истории заемщика</li>
+						<li>Полное сопровождение клиента<br>             до получения кредита</li>
+					</ul>
+				</div>
+				<div class="way-vertical second"></div>
+			</div>
+			<div class="ready">
+				<div class="wrapper">
+					<img src="images/ready.png" class="ready-img">
+					<p>Заполнить онлайн заявку прямо сейчас!</p>
+					<button class="quest">Заполнить анкету</button>
+				</div>
+			</div>
+		</div>
+		<div class="info">
+			<p class="review">Отзывы наших клиентов</p>
+			<div class="slider">
+				<input type="radio" id="l0" name="slide" checked>
+				<input type="radio" id="l1" name="slide">
+				<input type="radio" id="l2" name="slide">
+				<input type="radio" id="l3" name="slide">
+				<input type="radio" id="l4" name="slide">
+				<input type="radio" id="l5" name="slide">
+				<input type="radio" id="l6" name="slide">
+				<label for="l0"></label>
+				<label for="l1"></label>
+				<label for="l2"></label>
+				<label for="l3"></label>
+				<label for="l4"></label>
+				<label for="l5"></label>
+				<label for="l6"></label>
+				<div>
+					<div class="slide">
+						<div>
+							<img class="video" src="http://img.youtube.com/vi/c4mZABv4Nls/0.jpg" data-video="https://www.youtube.com/embed/c4mZABv4Nls?autohide=1&showinfo=0&autoplay=1">
+						</div>
+						<p class="slide-title">Игорь и Мария</p>
+						<p class="slide-descr">«Быстро, просто и результативно»</p>
+					</div>
+					<div class="slide">
+						<div>
+							<img class="video" src="http://img.youtube.com/vi/4d5d5WYDHT8/0.jpg" data-video="https://www.youtube.com/embed/4d5d5WYDHT8?autohide=1&showinfo=0&autoplay=1">
+						</div>
+						<p class="slide-title">Игорь и Мария</p>
+						<p class="slide-descr">«Быстро, просто и результативно»</p>
+					</div>
+					<div class="slide">
+						<div>
+							<img class="video" src="http://img.youtube.com/vi/4Hf_XkgE1d0/0.jpg" data-video="https://www.youtube.com/embed/4Hf_XkgE1d0?autohide=1&showinfo=0&autoplay=1">
+						</div>
+						<p class="slide-title">Игорь и Мария</p>
+						<p class="slide-descr">«Быстро, просто и результативно»</p>
+					</div>
+					<div class="slide">
+						<div>
+							<img class="video" src="http://img.youtube.com/vi/bsdGhIfjCYw/0.jpg" data-video="https://www.youtube.com/embed/bsdGhIfjCYw?autohide=1&showinfo=0&autoplay=1">
+						</div>
+						<p class="slide-title">Игорь и Мария</p>
+						<p class="slide-descr">«Быстро, просто и результативно»</p>
+					</div>
+					<div class="slide">
+						<div>
+							<img class="video" src="http://img.youtube.com/vi/ehKAkRbP43k/0.jpg" data-video="https://www.youtube.com/embed/ehKAkRbP43k?autohide=1&showinfo=0&autoplay=1">
+						</div>
+						<p class="slide-title">Игорь и Мария</p>
+						<p class="slide-descr">«Быстро, просто и результативно»</p>
+					</div>
+					<div class="slide">
+						<div>
+							<img class="video" src="http://img.youtube.com/vi/Xx1QifUuULY/0.jpg" data-video="https://www.youtube.com/embed/Xx1QifUuULY?autohide=1&showinfo=0&autoplay=1">
+						</div>
+						<p class="slide-title">Игорь и Мария</p>
+						<p class="slide-descr">«Быстро, просто и результативно»</p>
+					</div>
+					<div class="slide">
+						<div>
+							<img class="video" src="http://img.youtube.com/vi/JXMyZ929lpY/0.jpg" data-video="https://www.youtube.com/embed/JXMyZ929lpY?autohide=1&showinfo=0&autoplay=1">
+						</div>
+						<p class="slide-title">Игорь и Мария</p>
+						<p class="slide-descr">«Быстро, просто и результативно»</p>
+					</div>
+					<div class="slide">
+						<div>
+							<img class="video" src="http://img.youtube.com/vi/JSQDbwR_I50/0.jpg" data-video="https://www.youtube.com/embed/JSQDbwR_I50?autohide=1&showinfo=0&autoplay=1">
+						</div>
+						<p class="slide-title">Игорь и Мария</p>
+						<p class="slide-descr">«Быстро, просто и результативно»</p>
+					</div>
+				</div>
+			</div>
+			<div class="calculator">
+				<h2>Онлайн калькулятор кредита</h2>
+				<p class="descr">Удобный калькулятор для расчёта кредита онлайн</p>
+				<form action="/echo" method="post" oninput="moneyOutput.value = money.value;
+															timeOutput.value = time.value;
+															betOutput.value = bet.value;
+															fullCredit.value = Math.round(money.value * (1 + time.value / 12 * bet.value / 100));
+															monthPay.value = Math.round(fullCredit.value / time.value);
+															rePay.value = fullCredit.value - money.value;">
+					<div class="block1">
+						<label for="money">
+							<span>Нужен микрокредит?</span>
+						</label>
+						<output name="moneyOutput">50000</output>
+						<input name="money" id="money" type="range" min="5000" max="1000000" step="1" value="50000">
+						<div class="under-money">
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+						</div>
+						<div class="under-money">
+							<span class="number">5 000</span>
+							<span class="number">170 833</span>
+							<span class="number">366 666</span>
+							<span class="number">500 000</span>
+							<span class="number">688 333</span>
+							<span class="number">834 166</span>
+							<span class="number">1 000 000</span>
+						</div>
+						<label for="time">На срок:</label>
+						<output name="timeOutput">24</output>
+						<input type="range" name="time" id="time" min="1" max="360" step="1" value="24">
+						<div class="under-time">
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+						</div>
+						<div class="under-time">
+							<span class="month">1 мес</span>
+							<span class="month">52 мес</span>
+							<span class="month">103 мес</span>
+							<span class="month">155 мес</span>
+							<span class="month">206 мес</span>
+							<span class="month">257 мес</span>
+							<span class="month">308 мес</span>
+							<span class="month">360 мес</span>
+						</div>
+						<label for="bet">Процентная ставка:</label>
+						<output name="betOutput">25</output>
+						<input type="range" name="bet" id="bet" min="10" max="40" step="1" value="25">
+						<div class="under-bet">
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+							<span class="stick"></span>
+						</div>
+						<div class="under-bet">
+							<span class="value">10</span>
+							<span class="value">15</span>
+							<span class="value">20</span>
+							<span class="value">25</span>
+							<span class="value">30</span>
+							<span class="value">35</span>
+							<span class="value">40</span>
+						</div>
+					</div>
+					<div class="block2">
+						<div>
+							<p>Лучшее предложение</p>
+							<div class="rating">
+								<span class="star-fill"></span>
+								<span class="star-fill"></span>
+								<span class="star-fill"></span>
+								<span class="star-fill"></span>
+								<span class="star-fill"></span>
+							</div>
+							<ul>
+								<li>ЕЖЕМЕСЯЧНЫЙ ПЛАТЁЖ:<br>
+									<output name="monthPay">3125</output>
+								</li>
+								<li><hr>ПЕРЕПЛАТА:<br>
+									<output name="rePay">25000</output>
+								</li>
+								<li><hr>ПОЛНАЯ СУММА КРЕДИТА:<br>
+									<output name="fullCredit">75000</output>
+								</li>
+								<li class="type"><hr>ТИП ПОЛУЧЕНИЯ:<br>
+									<span class="visa"></span>
+									<span class="visa"></span>
+									<span class="visa"></span>
+									<span class="visa"></span>
+									<span class="visa"></span>
+									<span class="visa"></span>
+								</li>
+							</ul>
+							<button class="quest">Заполнить анкету</button>
+						</div>
+					</div>
+				</form>	
+			</div>
+			<div class="proposal">
+				<div class="banks">
+					<div class="proposal-head">
+						<p>Наиболее выгодные предложения для вас</p>
+					</div>
+					<div class="bank">
+						<div class="title"></div>
+						<hr>
+						<p>Сумма:</p>
+						<span>до 30 000 руб.</span>
+						<br>
+						<hr>
+						<p>Процент:</p>
+						<span>5%</span>
+						<br>
+						<hr>
+						<p>Возраст:</p>
+						<span>от 35 до 75 лет</span>
+						<hr>
+						<div class="cards">
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+						</div>
+						<button class="quest">Получить деньги</button>
+					</div>
+					<div class="bank">
+						<div class="title"></div>
+						<hr>
+						<p>Сумма:</p>
+						<span>до 30 000 руб.</span>
+						<br>
+						<hr>
+						<p>Процент:</p>
+						<span>5%</span>
+						<br>
+						<hr>
+						<p>Возраст:</p>
+						<span>от 35 до 75 лет</span>
+						<hr>
+						<div class="cards">
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+						</div>
+						<button class="quest">Получить деньги</button>
+					</div>
+					<div class="bank">
+						<div class="title"></div>
+						<hr>
+						<p>Сумма:</p>
+						<span>до 30 000 руб.</span>
+						<br>
+						<hr>
+						<p>Процент:</p>
+						<span>5%</span>
+						<br>
+						<hr>
+						<p>Возраст:</p>
+						<span>от 35 до 75 лет</span>
+						<hr>
+						<div class="cards">
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+						</div>
+						<button class="quest">Получить деньги</button>
+					</div>
+					<div class="bank">
+						<div class="title"></div>
+						<hr>
+						<p>Сумма:</p>
+						<span>до 30 000 руб.</span>
+						<br>
+						<hr>
+						<p>Процент:</p>
+						<span>5%</span>
+						<br>
+						<hr>
+						<p>Возраст:</p>
+						<span>от 35 до 75 лет</span>
+						<hr>
+						<div class="cards">
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+						</div>
+						<button class="quest">Получить деньги</button>
+					</div>
+					<div class="bank">
+						<div class="title"></div>
+						<hr>
+						<p>Сумма:</p>
+						<span>до 30 000 руб.</span>
+						<br>
+						<hr>
+						<p>Процент:</p>
+						<span>5%</span>
+						<br>
+						<hr>
+						<p>Возраст:</p>
+						<span>от 35 до 75 лет</span>
+						<hr>
+						<div class="cards">
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+						</div>
+						<button class="quest">Получить деньги</button>
+					</div>
+					<div class="bank">
+						<div class="title"></div>
+						<hr>
+						<p>Сумма:</p>
+						<span>до 30 000 руб.</span>
+						<br>
+						<hr>
+						<p>Процент:</p>
+						<span>5%</span>
+						<br>
+						<hr>
+						<p>Возраст:</p>
+						<span>от 35 до 75 лет</span>
+						<hr>
+						<div class="cards">
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+							<span class="visa"></span>
+						</div>
+						<button class="quest">Получить деньги</button>
+					</div>
+					<button class="show-more">Показать ещё</button>
+				</div>
+				<div class="banners">
+					<a href="#" class="banner1"></a>
+					<a href="#" class="banner2"></a>
+				</div>
+			</div>
+			<div class="subscribe">
+				<p>Присоединяйтесь к рассылке!</p>
+				<span>Оформляя подписку, вы принимаете <br><a href="#">политику конфиденциальности</a> Банок.ру</span>
+				<form>
+					<input type="email" name="subscribe" placeholder="Ваш E-mail">
+					<input type="submit" name="subscribe" value="Получать новости">
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="wrapper">
+			<span>© 2007 - 2016 «Банок.ру»</span>
+			<span class="in-social">«Банок.ру»  в социальных сетях:</span>
+			<hr>
+			<p>«Банок.ру» занимается консультационной деятельностью<br>по подбору кредитных программ, не является кредитной организацией и<br>самостоятельно не выдает кредиты.</p>
+			<div class="social-networks">
+				<a href="#" class="vk"></a>
+				<a href="#" class="facebook"></a>
+				<a href="#" class="twitter"></a>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
