@@ -3,9 +3,10 @@ window.onload = function() {
 	(function go() {
 		window.onscroll = function() {
 		let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-		let screenPoint = [];
+		let screenPoint = [],
+		    pageWidth = document.documentElement.clientWidth;
 
-			if($(window).width() >= 1900) {
+			if(pageWidth >= 1900) {
 				screenPoint[0] = 1400;
 				screenPoint[1] = 1600;
 				screenPoint[2] = 1900;
@@ -13,7 +14,7 @@ window.onload = function() {
 				screenPoint[4] = 2400;
 				screenPoint[5] = 2600;
 				screenPoint[6] = 2900;
-			} else if ($(window).width() >= 1024 && $(window).width() < 1920) {
+			} else if (pageWidth >= 1024 && pageWidth < 1920) {
 				screenPoint[0] = 1300;
 				screenPoint[1] = 1500;
 				screenPoint[2] = 1700;
@@ -21,7 +22,7 @@ window.onload = function() {
 				screenPoint[4] = 2200;
 				screenPoint[5] = 2400;
 				screenPoint[6] = 2700;
-			} else if ($(window).width() >= 320 && $(window).width() < 1024) {
+			} else if (pageWidth >= 320 && pageWidth < 1024) {
 				screenPoint[0] = 700;
 				screenPoint[1] = 900;
 				screenPoint[2] = 1100;
@@ -37,7 +38,8 @@ window.onload = function() {
 			}
 
 			if (scrolled > screenPoint[1] && scrolled < screenPoint[1] + 600) {
-				if($(".good-history").css('display') === 'none' && $(".bad-history").css('display') === 'none') {
+				if(!document.querySelector('.good-history').offsetWidth && !document.querySelector('.good-history').offsetHeight &&
+				   !document.querySelector('.bad-history').offsetWidth && !document.querySelector('.bad-history').offsetHeight) {
 					document.getElementsByClassName('dark')[0].style = "display: block;";
 					document.getElementsByClassName('good-button')[0].style = "animation: 0.45s history-choise;";
 		    		document.getElementsByClassName('bad-button')[0].style = "animation: 0.45s 0.4s history-choise;";
